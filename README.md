@@ -12,3 +12,8 @@ git clone https://github.com/refresh-bio/agc
 cd agc && make 
 ./agc getcol -o ./decompressed HPRC-yr1.agc  #to decompress 95 samples into the folder "decompressed"
 ```
+To compile and run compression code use:
+```bash
+g++ -o cal calfor50.cpp -lzstd -L./zstd/lib/
+./calfor50
+```
